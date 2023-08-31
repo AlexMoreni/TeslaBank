@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <script src="/js/login.js" defer></script>
+    <title>TeslaBank | Login</title>
+  </head>
+  <body>
+    <div class="alert" id="alert-null">
+      <h1>Preencha todos os campos antes de tentar entrar.🚨</h1>
+    </div>
+    <div class="alert" id="alert-user">
+      <h1>Usuário não encontrado.🚨</h1>
+    </div>
+    <form
+      action="/users/login"
+      method="post"
+      class="container-form"
+      id="meuFormulario"
+    >
+      <h1>Login</h1>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email-login"
+          name="email"
+          placeholder="Digite seu email"
+        />
+      </div>
+      <div>
+        <label for="password">Senha:</label>
+        <input
+          type="password"
+          id="password-login"
+          name="password"
+          placeholder="Digite sua senha"
+        />
+      </div>
+      <div>
+        <button class="btn-login" id="btn-login">Entrar</button>
+      </div>
+    </form>
+  </body>
+</html>

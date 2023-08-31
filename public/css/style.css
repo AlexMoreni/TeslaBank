@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&display=swap");
+
+:root {
+  --colorRed: #eb3850;
+  --colorBlack: #1a191e;
+  --fontEmphasis: "DM Sans", sans-serif;
+  --fontText: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-family: var(--fontEmphasis);
+  font-size: 2em;
+  color: var(--colorRed);
+}
+
+.navbar nav a {
+  font-family: var(--fontEmphasis);
+  font-weight: 500;
+  color: var(--colorBlack);
+  text-decoration: none;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.navbar nav a:hover {
+  color: var(--colorRed);
+}
+
+.navbar div a {
+  font-family: var(--fontEmphasis);
+  color: var(--colorRed);
+  padding: 5px 12px;
+  text-decoration: none;
+}
+
+.navbar div a:last-child {
+  color: #fff;
+  background-color: var(--colorRed);
+}
+
+.navbar div a:hover {
+  color: var(--colorRed);
+  background-color: #fff;
+  outline: 1px solid var(--colorRed);
+}
+
+/* Home */
+.home {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .container-text-home {
+  max-width: 50%;
+}
+
+.home .container-text-home h1 {
+  font-family: var(--fontEmphasis);
+  font-size: 4.68rem;
+}
+
+.home .container-text-home span {
+  display: block;
+}
+
+.home .container-text-home p {
+  font-family: var(--fontText);
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.home .container-text-home ul {
+  display: flex;
+  gap: 30px;
+}
+
+.home .container-text-home ul .container-li {
+  display: flex;
+  align-items: center;
+}
+
+.home .container-text-home li {
+  font-family: var(--fontText);
+  list-style: none;
+}
+
+.container-buttons-home {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.container-buttons-home a {
+  font-family: var(--fontText);
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--colorRed);
+  padding: 18px 40px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container-buttons-home a:hover {
+  color: var(--colorRed);
+  background-color: #fff;
+  outline: 2px solid var(--colorRed);
+}
+
+.container-img-home img {
+  width: 350px;
+  cursor: pointer;
+}
+
+/*open-account*/
+
+.open-account {
+  display: flex;
+  justify-content: space-around;
+}
+
+.open-account .container-open-left:first-child {
+  width: 350px;
+  position: relative;
+}
+
+.open-account .container-open-left #check-open {
+  position: absolute;
+  top: 80px;
+  left: -60px;
+}
+
+.open-account .container-open-left #cursor-open {
+  position: absolute;
+  top: 400px;
+  right: -70px;
+}
+
+.open-account .container-open-left #heart-open {
+  position: absolute;
+  bottom: 40px;
+  left: -60px;
+}
+
+.open-account .container-open-right {
+  padding-top: 150px;
+}
+
+.container-open-right .container-text-open h2 {
+  max-width: 600px;
+  font-family: var(--fontEmphasis);
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+}
+
+.container-open-right .container-text-open span {
+  color: var(--colorRed);
+}
+
+.container-open-right .container-text-open p {
+  max-width: 600px;
+  font-family: var(--fontText);
+  font-size: 1.2rem;
+}
+
+.container-open-right .container-benefits {
+  margin-top: 40px;
+}
+
+.container-open-right .container-benefits .benefits {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.container-benefits .benefits .text-benefits h3 {
+  font-family: var(--fontEmphasis);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container-benefits .benefits .text-benefits p {
+  font-family: var(--fontText);
+}

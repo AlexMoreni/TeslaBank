@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&display=swap");
+
+:root {
+  --colorRed: #eb3850;
+  --colorBlack: #1a191e;
+  --fontEmphasis: "DM Sans", sans-serif;
+  --fontText: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+}
+
+.container-form {
+  background: #fff;
+  padding: 50px;
+  box-shadow: 10px 10px 5px var(--colorRed);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form h1 {
+  font-size: 2.5em;
+  font-family: var(--fontEmphasis);
+  color: var(--colorRed);
+  margin-bottom: 10px;
+}
+
+.container-form label {
+  font-family: var(--fontEmphasis);
+  font-size: 1.25em;
+  display: block;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.container-form input {
+  width: 100%;
+  height: 35px;
+  font-family: var(--fontEmphasis);
+  font-size: 1.15em;
+  padding: 10px;
+}
+
+.container-form .btn-login {
+  font-family: var(--fontEmphasis);
+  font-size: 1.25em;
+  color: #fff;
+  padding: 5px 35px;
+  background-color: var(--colorRed);
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#meuFormularioRegister {
+  width: 600px;
+}
+
+.alert {
+  width: 400px;
+  font-family: var(--fontEmphasis);
+  font-size: 0.8rem;
+  background: #fff;
+  box-shadow: 10px 10px 5px var(--colorRed);
+  transition: 0.5s;
+  margin-bottom: 10px;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  display: none;
+}
